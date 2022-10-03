@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+*{padding:0;margin:0;box-sizing: border-box;
+font-family: 'Poppins',sans-serif;}
+a{text-decoration: none;color:#000;font-size: 11px;}
+ul{list-style: none;}
+.container{
+    width:90%;margin: auto;     
+}   
+.container nav{
+    /* background-color: red; */
+    display: flex;align-items: center;
+    height:50px;
+}
+.container nav .logo{flex:2;font-weight: normal;}
+.container nav  ul{flex:6;display: flex;}
+.container nav  ul li {margin-left: 10px;}
+.container nav  ul li a{opacity: .8;transition:opacity .3s;}
+.container nav  ul li a:hover{opacity: 1;}
+.container nav  ul li a{display: flex;}
+.container nav  ul li a i{display: inline-block;
+margin-left: 5px;margin-top:3px;}
+.container nav .compts{flex:3;
+display: flex;justify-content: flex-end;height:90%;
+align-items: center;
+}
+.container nav span{flex:1;display: flex;justify-content: flex-end;
+font-size: 22px;display: none;}
+.container nav .compts a{margin-left: 15px;}
+.container nav .compts a.signup{
+    color:#fff;background-color: #000;
+    padding:3px 8px;border-radius:5px;
+    opacity: .7;transition:opacity .3s;
+}
+.container nav .compts a.signup:hover{
+    opacity: 1;
+}
+
+
+@media only screen and (max-width:768px){
+    .container nav{
+        /* background-color: blue; */
+    }
+    .container nav .logo{flex:3;
+    /* background-color: yellow; */
+    }
+    .container nav .logo a{font-size:18px;}
+    .container nav  ul{flex:6}
+    .container nav  ul li a{font-size: 10;
+    letter-spacing: -1px;}
+    .container nav .compts{flex: 3;}
+}
+
+
+
+
+@media only screen and (max-width:600px){
+    .container nav{
+        /* background-color: green; */
+        position: relative;
+        z-index: 10000000;
+    }
+    .container nav .logo{flex:6;z-index: 1000;}
+    .container nav .compts{flex:5;
+    justify-content:center;;z-index: 1000;}
+    .container nav span{display:flex;flex:1;
+   }
+    .container nav  ul{position:absolute ;
+    flex-direction: column;
+    z-index:100000;
+    transition:.3s ease;
+    opacity: 0;
+    width:100%;height:400px;left:0;}
+    .container nav  ul.links li{
+    width: 100%;
+    background-color: #333;
+    border-bottom:1px solid #000 ;padding:10px;
+    margin: 0;
+    }
+    .container nav  ul li a{color:#fff;}
+    .container nav  ul li a{width: 100%;
+        height: 100%;
+        display: flex;justify-content: center;}
+        .container nav:hover ul{
+            top:50px;opacity: 1;
+        }
+}

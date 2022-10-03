@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+*{padding:0;margin:0;box-sizing: border-box;
+font-family: 'Poppins',sans-serif;}
+a{text-decoration: none;color:#000;font-size: 11px;}
+ul{list-style: none;}
+.container{
+    width:90%;margin: auto;  
+    overflow: hidden;
+    min-height: 100vh;
+}  
+.container .category{
+    display: flex;width: 100%;
+    margin-top: 80px;
+}
+.container .category .image{
+    width: calc(100% / 6 - 10px);
+    /* background-color: blue; */
+    margin-left: 10px;
+    height:75.84px;
+}
+.container .category .image:first-child{
+    margin-left: 0;
+    width:calc(100% / 6);
+}
+.container .category .image img{
+    width:85%;height:95%;
+}
+@media only screen and (max-width:600px){
+    .container .category{
+        display: flex;width: 100%;
+        margin-top:15px;
+        height:200px;
+        flex-wrap:wrap;
+        
+    }
+    .container .category .image:first-child{width:33.33%;}
+    
+    .container .category .image{
+        width:calc(33.33% - 10px);
+        /* background-color: yellow; */
+        margin-left: 10px;
+        height:75.84px;
+    }
+    .container .category .image:nth-child(4){
+        margin-left: 0;width:calc(33.33%)
+    }
+    .container .category .image img{
+        width:80%;height:95%;
+    }
+    
+}
