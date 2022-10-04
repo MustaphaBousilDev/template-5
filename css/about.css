@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
 *{padding:0;margin:0;box-sizing: border-box;
 font-family: 'Poppins',sans-serif;}
+body{height:50000px;}
 a{text-decoration: none;color:#000;font-size: 11px;}
 ul{list-style: none;}
 .container{
     width:90%;margin: auto;  
     overflow: hidden;
+   
     min-height: 100vh;
 }
 
@@ -105,19 +107,22 @@ ul{list-style: none;}
     .container .about-us{
         display: flex;
         flex-direction: column;
-        min-height:1500px;
+        min-height:1300px !important;
     }
     .container .about-us .col-1{
-        flex:1;
+        height:100px;
+        height:36.66%;
         /* background-color: blue; */
     }
     .container .about-us .details{
-        flex:1;
+        
+        height:26.66%;
         /* background-color: red; */
         padding:30px;
     }
     .container .about-us .col-2{
-        flex:1;
+        
+        height:36.66%;
         /* background-color: green; */
     }
 }
